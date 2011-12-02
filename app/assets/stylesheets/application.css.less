@@ -5,6 +5,9 @@
 *= require_self
 *= require_tree .
 */
+
+@colour: #0000FF;
+
 body {
   background-color: lightBlue;
   font-family: 'Helvetica Nueue', Helvetica, Arial, sans-serif;
@@ -16,7 +19,7 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: @colour;
 }
 
 .clear {
@@ -38,5 +41,7 @@ header {
   height: 70px;
 }
 nav {
-  float:left
+  float:left;
+  width: 100%;
+  clear: both;
 }

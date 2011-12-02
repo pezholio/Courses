@@ -1,0 +1,10 @@
+= content_tag(:p, flash[:notice], :class => 'flash_notice') if flash[:notice]
+%h2= @course.name
+%h3= @course.start_date
+%p= @course.description
+%p
+	%strong Price
+	&pound;
+	= @course.price
+%p= link_to "Edit", edit_course_path(@course)
+		

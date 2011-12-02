@@ -1,0 +1,9 @@
+%h2 Courses
+%ul#courses 
+	= render @courses
+%p
+	%strong Show:
+	= link_to "Future", courses_path(:show => 'future')
+	= link_to "Past", courses_path(:show => 'past')
+	= link_to "This Week", courses_path(:show => 'this_week') 
+	= link_to "All", courses_path(:show => 'all') 

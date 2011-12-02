@@ -1,0 +1,4 @@
+%li 
+	= link_to course.name, course_path(course), :id => dom_id(course) 
+	%small 
+		= days_until_course(course)

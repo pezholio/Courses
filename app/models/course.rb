@@ -16,4 +16,10 @@ class Course < ActiveRecord::Base
 	}
 	
 	scope :ordered, order(:start_date)
+	
+	before_save :do_a_thing
+	
+	def do_a_thing
+		#do a thing
+	end
 end
